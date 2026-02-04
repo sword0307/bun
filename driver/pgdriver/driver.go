@@ -155,14 +155,43 @@ func (cn *Conn) reader(ctx context.Context, timeout time.Duration) *reader {
 	return cn.rd
 }
 
+const sqlPrefixLen = 20
+
+func writeLogSQLPrefix(wb *writeBuffer) string {
+	b := wb.Bytes
+	if len(b) < 6 || b[0] != 'Q' {
+		return ""
+	}
+	payload := b[5:]
+	for i, c := range payload {
+		if c == 0 {
+			s := string(payload[:i])
+			if len(s) > sqlPrefixLen {
+				return s[:sqlPrefixLen] + "..."
+			}
+			return s
+		}
+	}
+	return ""
+}
+
 func (cn *Conn) write(ctx context.Context, wb *writeBuffer) error {
 	cn.setWriteDeadline(ctx, -1)
 
 	bytesToSend := len(wb.Bytes)
-	Logger.Printf(ctx, "pgdriver: Conn.write before send: %d bytes", bytesToSend)
+	sqlPrefix := writeLogSQLPrefix(wb)
+	if sqlPrefix != "" {
+		Logger.Printf(ctx, "pgdriver: Conn.write before send: %d bytes, sql_prefix=%q", bytesToSend, sqlPrefix)
+	} else {
+		Logger.Printf(ctx, "pgdriver: Conn.write before send: %d bytes", bytesToSend)
+	}
 	n, err := cn.netConn.Write(wb.Bytes)
 	wb.Reset()
-	Logger.Printf(ctx, "pgdriver: Conn.write after send: wrote %d bytes, err=%v", n, err)
+	if sqlPrefix != "" {
+		Logger.Printf(ctx, "pgdriver: Conn.write after send: wrote %d bytes, err=%v, sql_prefix=%q", n, err, sqlPrefix)
+	} else {
+		Logger.Printf(ctx, "pgdriver: Conn.write after send: wrote %d bytes, err=%v", n, err)
+	}
 
 	if err != nil {
 		if n == 0 {
