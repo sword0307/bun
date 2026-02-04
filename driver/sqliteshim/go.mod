@@ -1,4 +1,4 @@
-module github.com/uptrace/bun/driver/sqliteshim
+module github.com/sword0307/bun/driver/sqliteshim
 
 go 1.19
 

@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/require"
-	"github.com/uptrace/bun/driver/pgdriver"
+	"github.com/sword0307/bun/driver/pgdriver"
 )
 
 func TestParseDSN(t *testing.T) {

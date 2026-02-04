@@ -1,12 +1,12 @@
-module github.com/uptrace/bun/driver/pgdriver
+module github.com/sword0307/bun/driver/pgdriver
 
 go 1.19
 
-replace github.com/uptrace/bun => ../..
+replace github.com/sword0307/bun => ../..
 
 require (
 	github.com/stretchr/testify v1.8.1
-	github.com/uptrace/bun v1.1.17
+	github.com/sword0307/bun v1.1.17
 	mellium.im/sasl v0.3.1
 )
 
