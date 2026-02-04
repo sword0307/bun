@@ -158,8 +158,11 @@ func (cn *Conn) reader(ctx context.Context, timeout time.Duration) *reader {
 func (cn *Conn) write(ctx context.Context, wb *writeBuffer) error {
 	cn.setWriteDeadline(ctx, -1)
 
+	bytesToSend := len(wb.Bytes)
+	Logger.Printf(ctx, "pgdriver: Conn.write before send: %d bytes", bytesToSend)
 	n, err := cn.netConn.Write(wb.Bytes)
 	wb.Reset()
+	Logger.Printf(ctx, "pgdriver: Conn.write after send: wrote %d bytes, err=%v", n, err)
 
 	if err != nil {
 		if n == 0 {
