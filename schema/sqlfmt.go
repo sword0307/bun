@@ -3,7 +3,7 @@ package schema
 import (
 	"strings"
 
-	"github.com/uptrace/bun/internal"
+	"github.com/sword0307/bun/internal"
 )
 
 type QueryAppender interface {

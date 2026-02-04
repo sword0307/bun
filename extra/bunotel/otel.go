@@ -14,9 +14,9 @@ import (
 	semconv "go.opentelemetry.io/otel/semconv/v1.20.0"
 	"go.opentelemetry.io/otel/trace"
 
-	"github.com/uptrace/bun"
-	"github.com/uptrace/bun/dialect"
-	"github.com/uptrace/bun/schema"
+	"github.com/sword0307/bun/"
+	"github.com/sword0307/bun/dialect"
+	"github.com/sword0307/bun/schema"
 	"github.com/uptrace/opentelemetry-go-extra/otelsql"
 )
 
@@ -36,10 +36,10 @@ func NewQueryHook(opts ...Option) *QueryHook {
 		opt(h)
 	}
 	if h.tracer == nil {
-		h.tracer = otel.Tracer("github.com/uptrace/bun")
+		h.tracer = otel.Tracer("github.com/sword0307/bun/")
 	}
 	if h.meter == nil {
-		h.meter = otel.Meter("github.com/uptrace/bun")
+		h.meter = otel.Meter("github.com/sword0307/bun/")
 	}
 	h.queryHistogram, _ = h.meter.Int64Histogram(
 		"go.sql.query_timing",
@@ -89,7 +89,7 @@ func (h *QueryHook) AfterQuery(ctx context.Context, event *bun.QueryEvent) {
 	defer span.End()
 
 	query := h.eventQuery(event)
-	fn, file, line := funcFileLine("github.com/uptrace/bun")
+	fn, file, line := funcFileLine("github.com/sword0307/bun/")
 
 	attrs := make([]attribute.KeyValue, 0, 10)
 	attrs = append(attrs, h.attrs...)

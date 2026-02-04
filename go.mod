@@ -1,4 +1,4 @@
-module github.com/uptrace/bun
+module github.com/sword0307/bun
 
 go 1.19
 

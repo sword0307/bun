@@ -7,15 +7,15 @@ import (
 	"os"
 	"strings"
 
-	"github.com/uptrace/bun/dialect/sqlitedialect"
-	"github.com/uptrace/bun/driver/sqliteshim"
-	"github.com/uptrace/bun/example/migrate/migrations"
-	"github.com/uptrace/bun/extra/bundebug"
-	"github.com/uptrace/bun/migrate"
+	"github.com/sword0307/bun/dialect/sqlitedialect"
+	"github.com/sword0307/bun/driver/sqliteshim"
+	"github.com/sword0307/bun/example/migrate/migrations"
+	"github.com/sword0307/bun/extra/bundebug"
+	"github.com/sword0307/bun/migrate"
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/uptrace/bun"
+	"github.com/sword0307/bun/"
 )
 
 func main() {

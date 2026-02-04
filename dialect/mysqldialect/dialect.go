@@ -11,11 +11,11 @@ import (
 
 	"golang.org/x/mod/semver"
 
-	"github.com/uptrace/bun"
-	"github.com/uptrace/bun/dialect"
-	"github.com/uptrace/bun/dialect/feature"
-	"github.com/uptrace/bun/dialect/sqltype"
-	"github.com/uptrace/bun/schema"
+	"github.com/sword0307/bun/"
+	"github.com/sword0307/bun/dialect"
+	"github.com/sword0307/bun/dialect/feature"
+	"github.com/sword0307/bun/dialect/sqltype"
+	"github.com/sword0307/bun/schema"
 )
 
 const datetimeType = "DATETIME"

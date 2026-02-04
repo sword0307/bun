@@ -11,7 +11,7 @@ import (
 
 	"github.com/rs/zerolog"
 
-	"github.com/uptrace/bun"
+	"github.com/sword0307/bun/"
 )
 
 type Record struct {

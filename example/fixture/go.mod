@@ -1,23 +1,23 @@
-module github.com/uptrace/bun/example/fixture
+module github.com/sword0307/bun/example/fixture
 
 go 1.19
 
-replace github.com/uptrace/bun => ../..
+replace github.com/sword0307/bun/ => ../..
 
-replace github.com/uptrace/bun/extra/bundebug => ../../extra/bundebug
+replace github.com/sword0307/bun/extra/bundebug => ../../extra/bundebug
 
-replace github.com/uptrace/bun/dialect/sqlitedialect => ../../dialect/sqlitedialect
+replace github.com/sword0307/bun/dialect/sqlitedialect => ../../dialect/sqlitedialect
 
-replace github.com/uptrace/bun/driver/sqliteshim => ../../driver/sqliteshim
+replace github.com/sword0307/bun/driver/sqliteshim => ../../driver/sqliteshim
 
-replace github.com/uptrace/bun/dbfixture => ../../dbfixture
+replace github.com/sword0307/bun/dbfixture => ../../dbfixture
 
 require (
-	github.com/uptrace/bun v1.1.17
-	github.com/uptrace/bun/dbfixture v1.1.17
-	github.com/uptrace/bun/dialect/sqlitedialect v1.1.17
-	github.com/uptrace/bun/driver/sqliteshim v1.1.17
-	github.com/uptrace/bun/extra/bundebug v1.1.17
+	github.com/sword0307/bun/ v1.1.17
+	github.com/sword0307/bun/dbfixture v1.1.17
+	github.com/sword0307/bun/dialect/sqlitedialect v1.1.17
+	github.com/sword0307/bun/driver/sqliteshim v1.1.17
+	github.com/sword0307/bun/extra/bundebug v1.1.17
 )
 
 require (

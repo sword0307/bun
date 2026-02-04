@@ -7,8 +7,8 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/uptrace/bun"
-	"github.com/uptrace/bun/schema"
+	"github.com/sword0307/bun/"
+	"github.com/sword0307/bun/schema"
 )
 
 func TestQueryHook(t *testing.T) {

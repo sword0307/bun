@@ -1,11 +1,11 @@
-module github.com/uptrace/bun/extra/bunotel
+module github.com/sword0307/bun/extra/bunotel
 
 go 1.19
 
-replace github.com/uptrace/bun => ../..
+replace github.com/sword0307/bun/ => ../..
 
 require (
-	github.com/uptrace/bun v1.1.17
+	github.com/sword0307/bun/ v1.1.17
 	github.com/uptrace/opentelemetry-go-extra/otelsql v0.2.3
 	go.opentelemetry.io/otel v1.21.0
 	go.opentelemetry.io/otel/metric v1.21.0

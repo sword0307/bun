@@ -1,8 +1,8 @@
-module github.com/uptrace/bun/extra/bunbig
+module github.com/sword0307/bun/extra/bunbig
 
 go 1.19
 
-replace github.com/uptrace/bun => ../..
+replace github.com/sword0307/bun/ => ../..
 
 require (
 	github.com/stretchr/testify v1.8.1

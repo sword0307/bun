@@ -1,24 +1,24 @@
-module github.com/uptrace/bun/internal/dbtest
+module github.com/sword0307/bun/internal/dbtest
 
 go 1.19
 
-replace github.com/uptrace/bun => ../..
+replace github.com/sword0307/bun/ => ../..
 
-replace github.com/uptrace/bun/dbfixture => ../../dbfixture
+replace github.com/sword0307/bun/dbfixture => ../../dbfixture
 
-replace github.com/uptrace/bun/dialect/pgdialect => ../../dialect/pgdialect
+replace github.com/sword0307/bun/dialect/pgdialect => ../../dialect/pgdialect
 
-replace github.com/uptrace/bun/driver/pgdriver => ../../driver/pgdriver
+replace github.com/sword0307/bun/driver/pgdriver => ../../driver/pgdriver
 
-replace github.com/uptrace/bun/driver/sqliteshim => ../../driver/sqliteshim
+replace github.com/sword0307/bun/driver/sqliteshim => ../../driver/sqliteshim
 
-replace github.com/uptrace/bun/dialect/mysqldialect => ../../dialect/mysqldialect
+replace github.com/sword0307/bun/dialect/mysqldialect => ../../dialect/mysqldialect
 
-replace github.com/uptrace/bun/dialect/sqlitedialect => ../../dialect/sqlitedialect
+replace github.com/sword0307/bun/dialect/sqlitedialect => ../../dialect/sqlitedialect
 
-replace github.com/uptrace/bun/dialect/mssqldialect => ../../dialect/mssqldialect
+replace github.com/sword0307/bun/dialect/mssqldialect => ../../dialect/mssqldialect
 
-replace github.com/uptrace/bun/extra/bundebug => ../../extra/bundebug
+replace github.com/sword0307/bun/extra/bundebug => ../../extra/bundebug
 
 require (
 	github.com/bradleyjkemp/cupaloy v2.3.0+incompatible
@@ -28,15 +28,15 @@ require (
 	github.com/google/uuid v1.5.0
 	github.com/jackc/pgx/v4 v4.11.0
 	github.com/stretchr/testify v1.8.1
-	github.com/uptrace/bun v1.1.17
-	github.com/uptrace/bun/dbfixture v1.1.17
-	github.com/uptrace/bun/dialect/mssqldialect v1.1.17
-	github.com/uptrace/bun/dialect/mysqldialect v1.1.17
-	github.com/uptrace/bun/dialect/pgdialect v1.1.17
-	github.com/uptrace/bun/dialect/sqlitedialect v1.1.17
-	github.com/uptrace/bun/driver/pgdriver v1.1.17
-	github.com/uptrace/bun/driver/sqliteshim v1.1.17
-	github.com/uptrace/bun/extra/bundebug v1.1.17
+	github.com/sword0307/bun/ v1.1.17
+	github.com/sword0307/bun/dbfixture v1.1.17
+	github.com/sword0307/bun/dialect/mssqldialect v1.1.17
+	github.com/sword0307/bun/dialect/mysqldialect v1.1.17
+	github.com/sword0307/bun/dialect/pgdialect v1.1.17
+	github.com/sword0307/bun/dialect/sqlitedialect v1.1.17
+	github.com/sword0307/bun/driver/pgdriver v1.1.17
+	github.com/sword0307/bun/driver/sqliteshim v1.1.17
+	github.com/sword0307/bun/extra/bundebug v1.1.17
 )
 
 require (

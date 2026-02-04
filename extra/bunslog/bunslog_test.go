@@ -10,7 +10,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/uptrace/bun"
+	"github.com/sword0307/bun/"
 )
 
 type Record struct {

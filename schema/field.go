@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"reflect"
 
-	"github.com/uptrace/bun/dialect"
-	"github.com/uptrace/bun/internal"
-	"github.com/uptrace/bun/internal/tagparser"
+	"github.com/sword0307/bun/dialect"
+	"github.com/sword0307/bun/internal"
+	"github.com/sword0307/bun/internal/tagparser"
 )
 
 type Field struct {

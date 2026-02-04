@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/uptrace/bun"
+	"github.com/sword0307/bun/"
 )
 
 var events Events

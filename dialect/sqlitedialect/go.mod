@@ -1,10 +1,10 @@
-module github.com/uptrace/bun/dialect/sqlitedialect
+module github.com/sword0307/bun/dialect/sqlitedialect
 
 go 1.19
 
-replace github.com/uptrace/bun => ../..
+replace github.com/sword0307/bun/ => ../..
 
-require github.com/uptrace/bun v1.1.17
+require github.com/sword0307/bun/ v1.1.17
 
 require (
 	github.com/jinzhu/inflection v1.0.0 // indirect

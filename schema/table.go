@@ -10,8 +10,8 @@ import (
 
 	"github.com/jinzhu/inflection"
 
-	"github.com/uptrace/bun/internal"
-	"github.com/uptrace/bun/internal/tagparser"
+	"github.com/sword0307/bun/internal"
+	"github.com/sword0307/bun/internal/tagparser"
 )
 
 const (

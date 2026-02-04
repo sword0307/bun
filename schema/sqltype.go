@@ -7,9 +7,9 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/uptrace/bun/dialect"
-	"github.com/uptrace/bun/dialect/sqltype"
-	"github.com/uptrace/bun/internal"
+	"github.com/sword0307/bun/dialect"
+	"github.com/sword0307/bun/dialect/sqltype"
+	"github.com/sword0307/bun/internal"
 )
 
 var (

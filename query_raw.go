@@ -4,7 +4,7 @@ import (
 	"context"
 	"database/sql"
 
-	"github.com/uptrace/bun/schema"
+	"github.com/sword0307/bun/schema"
 )
 
 type RawQuery struct {

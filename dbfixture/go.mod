@@ -1,11 +1,11 @@
-module github.com/uptrace/bun/dbfixture
+module github.com/sword0307/bun/dbfixture
 
 go 1.19
 
-replace github.com/uptrace/bun => ../
+replace github.com/sword0307/bun/ => ../
 
 require (
-	github.com/uptrace/bun v1.1.17
+	github.com/sword0307/bun/ v1.1.17
 	gopkg.in/yaml.v3 v3.0.1
 )
 

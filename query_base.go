@@ -8,9 +8,9 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/uptrace/bun/dialect/feature"
-	"github.com/uptrace/bun/internal"
-	"github.com/uptrace/bun/schema"
+	"github.com/sword0307/bun/dialect/feature"
+	"github.com/sword0307/bun/internal"
+	"github.com/sword0307/bun/schema"
 )
 
 const (

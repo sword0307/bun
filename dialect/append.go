@@ -4,7 +4,7 @@ import (
 	"math"
 	"strconv"
 
-	"github.com/uptrace/bun/internal"
+	"github.com/sword0307/bun/internal"
 )
 
 func AppendError(b []byte, err error) []byte {

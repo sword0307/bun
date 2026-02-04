@@ -10,7 +10,7 @@ import (
 	"log/slog"
 	"time"
 
-	"github.com/uptrace/bun"
+	"github.com/sword0307/bun/"
 )
 
 // Option is a function that configures a QueryHook.

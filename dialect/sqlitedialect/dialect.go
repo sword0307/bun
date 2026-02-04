@@ -5,11 +5,11 @@ import (
 	"encoding/hex"
 	"fmt"
 
-	"github.com/uptrace/bun"
-	"github.com/uptrace/bun/dialect"
-	"github.com/uptrace/bun/dialect/feature"
-	"github.com/uptrace/bun/dialect/sqltype"
-	"github.com/uptrace/bun/schema"
+	"github.com/sword0307/bun/"
+	"github.com/sword0307/bun/dialect"
+	"github.com/sword0307/bun/dialect/feature"
+	"github.com/sword0307/bun/dialect/sqltype"
+	"github.com/sword0307/bun/schema"
 )
 
 func init() {
@@ -96,9 +96,13 @@ func (d *Dialect) DefaultVarcharLen() int {
 // AUTOINCREMENT is only valid for INTEGER PRIMARY KEY, and this method will be a noop for other columns.
 //
 // Because this is a valid construct:
+//
 //	CREATE TABLE ("id" INTEGER PRIMARY KEY AUTOINCREMENT);
+//
 // and this is not:
+//
 //	CREATE TABLE ("id" INTEGER AUTOINCREMENT, PRIMARY KEY ("id"));
+//
 // AppendSequence adds a primary key constraint as a *side-effect*. Callers should expect it to avoid building invalid SQL.
 // SQLite also [does not support] AUTOINCREMENT column in composite primary keys.
 //

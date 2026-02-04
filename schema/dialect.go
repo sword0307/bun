@@ -7,9 +7,9 @@ import (
 	"time"
 	"unicode/utf8"
 
-	"github.com/uptrace/bun/dialect"
-	"github.com/uptrace/bun/dialect/feature"
-	"github.com/uptrace/bun/internal/parser"
+	"github.com/sword0307/bun/dialect"
+	"github.com/sword0307/bun/dialect/feature"
+	"github.com/sword0307/bun/internal/parser"
 )
 
 type Dialect interface {

@@ -38,7 +38,7 @@ func WithFormattedQueries(format bool) Option {
 func WithTracerProvider(tp trace.TracerProvider) Option {
 	return func(h *QueryHook) {
 		if tp != nil {
-			h.tracer = tp.Tracer("github.com/uptrace/bun")
+			h.tracer = tp.Tracer("github.com/sword0307/bun/")
 		}
 	}
 }
@@ -48,7 +48,7 @@ func WithTracerProvider(tp trace.TracerProvider) Option {
 func WithMeterProvider(mp metric.MeterProvider) Option {
 	return func(h *QueryHook) {
 		if mp != nil {
-			h.meter = mp.Meter("github.com/uptrace/bun")
+			h.meter = mp.Meter("github.com/sword0307/bun/")
 		}
 	}
 }

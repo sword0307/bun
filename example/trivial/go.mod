@@ -1,34 +1,34 @@
-module github.com/uptrace/bun/example/trivial
+module github.com/sword0307/bun/example/trivial
 
 go 1.19
 
-replace github.com/uptrace/bun => ../..
+replace github.com/sword0307/bun/ => ../..
 
-replace github.com/uptrace/bun/extra/bundebug => ../../extra/bundebug
+replace github.com/sword0307/bun/extra/bundebug => ../../extra/bundebug
 
-replace github.com/uptrace/bun/dialect/sqlitedialect => ../../dialect/sqlitedialect
+replace github.com/sword0307/bun/dialect/sqlitedialect => ../../dialect/sqlitedialect
 
-replace github.com/uptrace/bun/driver/sqliteshim => ../../driver/sqliteshim
+replace github.com/sword0307/bun/driver/sqliteshim => ../../driver/sqliteshim
 
-replace github.com/uptrace/bun/dialect/pgdialect => ../../dialect/pgdialect
+replace github.com/sword0307/bun/dialect/pgdialect => ../../dialect/pgdialect
 
-replace github.com/uptrace/bun/driver/pgdriver => ../../driver/pgdriver
+replace github.com/sword0307/bun/driver/pgdriver => ../../driver/pgdriver
 
-replace github.com/uptrace/bun/dialect/mysqldialect => ../../dialect/mysqldialect
+replace github.com/sword0307/bun/dialect/mysqldialect => ../../dialect/mysqldialect
 
-replace github.com/uptrace/bun/dialect/mssqldialect => ../../dialect/mssqldialect
+replace github.com/sword0307/bun/dialect/mssqldialect => ../../dialect/mssqldialect
 
 require (
 	github.com/denisenkom/go-mssqldb v0.12.3
 	github.com/go-sql-driver/mysql v1.7.1
-	github.com/uptrace/bun v1.1.17
-	github.com/uptrace/bun/dialect/mssqldialect v1.1.17
-	github.com/uptrace/bun/dialect/mysqldialect v1.1.17
-	github.com/uptrace/bun/dialect/pgdialect v1.1.17
-	github.com/uptrace/bun/dialect/sqlitedialect v1.1.17
-	github.com/uptrace/bun/driver/pgdriver v1.1.17
-	github.com/uptrace/bun/driver/sqliteshim v1.1.17
-	github.com/uptrace/bun/extra/bundebug v1.1.17
+	github.com/sword0307/bun/ v1.1.17
+	github.com/sword0307/bun/dialect/mssqldialect v1.1.17
+	github.com/sword0307/bun/dialect/mysqldialect v1.1.17
+	github.com/sword0307/bun/dialect/pgdialect v1.1.17
+	github.com/sword0307/bun/dialect/sqlitedialect v1.1.17
+	github.com/sword0307/bun/driver/pgdriver v1.1.17
+	github.com/sword0307/bun/driver/sqliteshim v1.1.17
+	github.com/sword0307/bun/extra/bundebug v1.1.17
 )
 
 require (

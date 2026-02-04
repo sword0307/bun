@@ -5,10 +5,10 @@ import (
 	"database/sql"
 	"fmt"
 
-	"github.com/uptrace/bun"
-	"github.com/uptrace/bun/dialect/pgdialect"
-	"github.com/uptrace/bun/driver/pgdriver"
-	"github.com/uptrace/bun/extra/bundebug"
+	"github.com/sword0307/bun/"
+	"github.com/sword0307/bun/dialect/pgdialect"
+	"github.com/sword0307/bun/driver/pgdriver"
+	"github.com/sword0307/bun/extra/bundebug"
 )
 
 func main() {

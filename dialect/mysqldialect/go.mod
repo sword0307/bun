@@ -1,11 +1,11 @@
-module github.com/uptrace/bun/dialect/mysqldialect
+module github.com/sword0307/bun/dialect/mysqldialect
 
 go 1.19
 
-replace github.com/uptrace/bun => ../..
+replace github.com/sword0307/bun/ => ../..
 
 require (
-	github.com/uptrace/bun v1.1.17
+	github.com/sword0307/bun/ v1.1.17
 	golang.org/x/mod v0.14.0
 )
 

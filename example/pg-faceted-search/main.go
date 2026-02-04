@@ -8,11 +8,11 @@ import (
 	"strings"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/uptrace/bun"
-	"github.com/uptrace/bun/dbfixture"
-	"github.com/uptrace/bun/dialect/pgdialect"
-	"github.com/uptrace/bun/driver/pgdriver"
-	"github.com/uptrace/bun/extra/bundebug"
+	"github.com/sword0307/bun/"
+	"github.com/sword0307/bun/dbfixture"
+	"github.com/sword0307/bun/dialect/pgdialect"
+	"github.com/sword0307/bun/driver/pgdriver"
+	"github.com/sword0307/bun/extra/bundebug"
 )
 
 type Book struct {

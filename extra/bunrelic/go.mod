@@ -1,12 +1,12 @@
-module github.com/uptrace/bun/extra/bunrelic
+module github.com/sword0307/bun/extra/bunrelic
 
 go 1.19
 
-replace github.com/uptrace/bun => ../..
+replace github.com/sword0307/bun/ => ../..
 
 require (
 	github.com/newrelic/go-agent/v3 v3.29.0
-	github.com/uptrace/bun v1.1.17
+	github.com/sword0307/bun/ v1.1.17
 )
 
 require (
